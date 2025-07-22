@@ -38,3 +38,13 @@ Next, the dataset was evaluated for class imbalance to determine whether one out
 The preprocessing phase concluded with a correlation analysis between the churn variable and other features—both numerical and categorical—to assess potential relationships and identify multicollinearity concerns.
 
 ### Modelling
+
+Before training the models, the dataset was split into training and testing sets to enable the model to learn patterns from historical data and evaluate performance on unseen data. Standard scaling was then applied to numerical columns in the training set. 
+
+To address the class imbalance observed in the target variable, the SMOTE technique was used. After resampling, the training dataset became perfectly balanced, with 50% of the samples representing customers who did not churn and 50% representing those who did.
+
+After applying SMOTE, the resampled training data was initially fitted into a logistic regression model. The model was then used for prediction and evaluated using metrics such as accuracy, precision, recall, confusion matrix, and ROC curves. 
+
+Two additional models—Random Forest and Decision Tree—were also trained on the same dataset and evaluated using the same metrics. To enhance performance, both models were further subjected to hyperparameter tuning to assess whether the evaluation metrics would improve.
+
+### Evaluation
