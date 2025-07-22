@@ -1,6 +1,6 @@
 ### Project Overview:
 ###  Customer Churn Prediction for SyriaTel
-![Alt text](churn_photo.jpg)
+![Alt text](Images\churn_photo.jpg)
 
 ## 1. Business Understanding
 
@@ -19,7 +19,7 @@ ii) Gain Insight into Churn Drivers
 
 iii) Provide Strategic Recommendations
 
-## 3 Intended Audience
+## 3. Intended Audience
 
 a. Telecom Business Executives: Need insights into churn trends, retention ROI, and how churn relates to product pricing.
 
@@ -85,6 +85,8 @@ Logistic Regression: AUC = 0.80 — Lowest among the three, but still a reliable
 customer service calls emerge as the most important feature in determining the likelihood of a customer churning. This suggests that customers who contact customer service frequently may be more likely to leave, potentially due to unresolved issues or dissatisfaction. 
 
 It is closely followed by total day charge and total day minutes, indicating that higher daytime usage and associated charges could also be significant indicators of churn behavior.
+
+![Alt text](Images\features.png)
 
 ## Recommendations
 
