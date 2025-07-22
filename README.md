@@ -1,6 +1,6 @@
 ### Project Overview:
 ###  Customer Churn Prediction for SyriaTel
-![Alt text](C:\Users\Administrator\Documents\project22\Phase-3-Project\churn_photo.webp)
+![Alt text](C:\Users\Administrator\Documents\project22\Phase-3-Project\churn_photo.jpg)
 
 ## 1. Business Understanding
 
