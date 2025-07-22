@@ -53,7 +53,7 @@ key findings
 
 Logistic model
 
-The Logistic Regression model achieved an accuracy of **0.72**, with a **precision of 0.30**, **recall of 0.71**, and **F1 score of 0.42**. The confusion matrix revealed **103 true positives**, **42 false negatives**, **239 false positives**, and **616 true negatives**. In terms of cross-validation, the model achieved an average accuracy of **75%** across 5 folds, indicating a reasonably good ability to distinguish between churned and non-churned customers. The **AUC score of 0.8015** suggests that the model has an **80.15% chance** of correctly ranking a randomly chosen churned customer above a non-churned one, highlighting decent discriminative power despite its lower precision.
+The Logistic Regression model achieved an accuracy of **0.72**, with a **precision of 0.30**, **recall of 0.71**, and **F1 score of 0.42**. The confusion matrix revealed 103 true positives, 42 false negatives, 239 false positives, and 616 true negatives. In terms of cross-validation, the model achieved an average accuracy of 75% across 5 folds, indicating a reasonably good ability to distinguish between churned and non-churned customers. The AUC score of 0.8015 suggests that the model has an 80.15% chance of correctly ranking a randomly chosen churned customer above a non-churned one, highlighting decent discriminative power despite its lower precision.
 
 **Decision trees**
 
@@ -81,7 +81,9 @@ Logistic Regression: AUC = 0.80 — Lowest among the three, but still a reliable
 
 ## Feature selection
 
-customer service calls emerge as the most important feature in determining the likelihood of a customer churning. This suggests that customers who contact customer service frequently may be more likely to leave, potentially due to unresolved issues or dissatisfaction. It is closely followed by total day charge and total day minutes, indicating that higher daytime usage and associated charges could also be significant indicators of churn behavior.
+customer service calls emerge as the most important feature in determining the likelihood of a customer churning. This suggests that customers who contact customer service frequently may be more likely to leave, potentially due to unresolved issues or dissatisfaction. 
+
+It is closely followed by total day charge and total day minutes, indicating that higher daytime usage and associated charges could also be significant indicators of churn behavior.
 
 ## Recommendations
 
