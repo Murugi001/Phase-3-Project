@@ -1,4 +1,5 @@
-### Project Overview: Customer Churn Prediction for SyriaTel
+### Project Overview:
+###  Customer Churn Prediction for SyriaTel
 
 ## 1. Business Understanding
 
@@ -24,5 +25,16 @@ a. Telecom Business Executives: Need insights into churn trends, retention ROI, 
 b. Marketing & Customer Retention Teams: Need a list of high-risk customers for proactive targeting.
 
 c. Customer Experience/Call Center Managers: Want to understand which service areas such customer service calls correlate with churn.
+
+### Data Source
+This study utilized the Churn in Telecoms dataset from Kaggle, which comprises 3,333 entries across 21 columns with no missing values, as confirmed by the .info() function. The dataset includes a mix of categorical variables such as state, international plan, voice mail plan, and churn, alongside numerical variables like total day minutes, customer service calls, and account length.
+
+### Data Exploration
+
+At this stage of the analysis, several preprocessing steps were undertaken to prepare the data for modeling. First, columns with low predictive value—such as the phone number—were dropped. This was followed by descriptive analysis of numerical features to understand their distribution and central tendencies.
+
+Next, the dataset was evaluated for class imbalance to determine whether one outcome (churn or no churn) significantly outweighed the other, which could bias the model. To ensure the data was ready for machine learning algorithms, categorical variables were converted into numeric form. One-hot encoding was specifically applied to variables like international plan and voice mail plan.
+
+The preprocessing phase concluded with a correlation analysis between the churn variable and other features—both numerical and categorical—to assess potential relationships and identify multicollinearity concerns.
 
 ### Modelling
