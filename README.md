@@ -48,3 +48,49 @@ After applying SMOTE, the resampled training data was initially fitted into a lo
 Two additional models—Random Forest and Decision Tree—were also trained on the same dataset and evaluated using the same metrics. To enhance performance, both models were further subjected to hyperparameter tuning to assess whether the evaluation metrics would improve.
 
 ### Evaluation
+
+key findings 
+
+Logistic model
+
+The Logistic Regression model achieved an accuracy of **0.72**, with a **precision of 0.30**, **recall of 0.71**, and **F1 score of 0.42**. The confusion matrix revealed **103 true positives**, **42 false negatives**, **239 false positives**, and **616 true negatives**. In terms of cross-validation, the model achieved an average accuracy of **75%** across 5 folds, indicating a reasonably good ability to distinguish between churned and non-churned customers. The **AUC score of 0.8015** suggests that the model has an **80.15% chance** of correctly ranking a randomly chosen churned customer above a non-churned one, highlighting decent discriminative power despite its lower precision.
+
+**Decision trees**
+
+The Decision Tree model achieved an accuracy of 0.88, with precision of 0.56 and recall of 0.75. The confusion matrix showed 769 true negatives, 86 false positives, 36 false negatives, and 109 true positives. With a cross-validation accuracy of 0.86, the model demonstrated consistent performance across folds, correctly classifying 86% of the customers on average.
+
+**Random Forest**
+
+The Random Forest model outperformed the others with an accuracy of 0.90, precision of 0.64, and recall of 0.73. It recorded 795 true negatives, 60 false positives, 39 false negatives, and 106 true positives. The model maintained strong generalization ability, with a cross-validation accuracy of 0.87, correctly identifying 87% of customers across different data splits.
+
+**After hyperparameter tuning:**
+
+**Accuracy**
+
+Decision Tree (90%): Accuracy improved from ~84%, now more stable across folds (±0.01 std), but still vulnerable to overfitting on complex patterns.
+
+Random Forest (95%): Highest accuracy and stability (±0.01 std); tuning enhanced generalization and minimized overfitting through ensemble learning.
+
+**ROC Score Comparison:**
+
+Tuned Random Forest: AUC = 0.89 — Best overall performance.
+
+Tuned Decision Tree: AUC = 0.86 — Strong performer, just behind Random Forest.
+
+Logistic Regression: AUC = 0.80 — Lowest among the three, but still a reliable baseline.
+
+## Feature selection
+
+customer service calls emerge as the most important feature in determining the likelihood of a customer churning. This suggests that customers who contact customer service frequently may be more likely to leave, potentially due to unresolved issues or dissatisfaction. It is closely followed by total day charge and total day minutes, indicating that higher daytime usage and associated charges could also be significant indicators of churn behavior.
+
+## Recommendations
+
+To reduce churn and boost customer lifetime value, key actions should focus on insights from model results and feature importance:
+
+* **Improve Customer Support**: Since service calls are a top churn driver, enhance support quality through satisfaction surveys, call sentiment analysis, and agent training.
+
+* **Target High Usage Customers**: Customers with high total day charges/minutes are at risk. Retain them with personalized offers, loyalty rewards, and proactive outreach using churn risk scores.
+
+* **Close the Loop**: Integrate churn insights into business reviews and regularly update models to reflect changing customer behavior.
+
+* **Deploy Smartly**: Use the tuned **Random Forest model** (AUC = 0.89) for prediction, and the **Decision Tree** for clear insight sharing with stakeholders.
