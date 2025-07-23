@@ -1,6 +1,5 @@
-### Project Overview:
-###  Customer Churn Prediction for SyriaTel
-![Alt text](Images/churn_photo.jpg)
+## Project Overview:
+##  CUSTOMER CHURN PREDICTION FOR SYRIATEL 
 
 ## 1.1 Business Understanding
 
@@ -51,11 +50,13 @@ Two additional models—Random Forest and Decision Tree—were also trained on t
 
 ### 3.1 Evaluation
 
-key findings 
+**key findings**
 
 Logistic model
 
 The Logistic Regression model achieved an accuracy of **0.72**, with a **precision of 0.30**, **recall of 0.71**, and **F1 score of 0.42**. The confusion matrix revealed 103 true positives, 42 false negatives, 239 false positives, and 616 true negatives. In terms of cross-validation, the model achieved an average accuracy of 75% across 5 folds, indicating a reasonably good ability to distinguish between churned and non-churned customers. The AUC score of 0.8015 suggests that the model has an 80.15% chance of correctly ranking a randomly chosen churned customer above a non-churned one, highlighting decent discriminative power despite its lower precision.
+
+![Alt text](Images/Logistic_reg_CM.png)
 
 
 **Decision trees**
