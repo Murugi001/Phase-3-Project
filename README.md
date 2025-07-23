@@ -1,6 +1,6 @@
 ### Project Overview:
 ###  Customer Churn Prediction for SyriaTel
-![Alt text](Images\churn_photo.jpg)
+![Alt text](Images/churn_photo.jpg)
 
 ## 1.1 Business Understanding
 
@@ -8,7 +8,8 @@ SyriaTel, like many telecom providers, operates in a highly competitive industry
 
 The challenge is that churn doesn't usually happen randomly. It can result from dissatisfaction with service quality, pricing, customer support, or competitors' offers. If SyriaTel can predict which customers are likely to churn, it can act proactively to retain them through targeted interventions.
 
-### 1.2 Business Goal
+### 1.2 Business Goals
+![Alt text](Images/Business goals.jpg)
 To reduce customer churn and increase customer lifetime value (CLTV) by identifying subscribers who are most likely to leave soon.
 
 Specifically:
@@ -86,7 +87,7 @@ customer service calls emerge as the most important feature in determining the l
 
 It is closely followed by total day charge and total day minutes, indicating that higher daytime usage and associated charges could also be significant indicators of churn behavior.
 
-![Alt text](Images\features.png)
+![Alt text](Images/features.png)
 
 ## 4.0 Recommendations
 
