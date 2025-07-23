@@ -62,7 +62,7 @@ The Logistic Regression model achieved an accuracy of **0.72**, with a **precisi
 
 The Decision Tree model achieved an accuracy of 0.88, with precision of 0.56 and recall of 0.75. The confusion matrix showed 769 true negatives, 86 false positives, 36 false negatives, and 109 true positives. With a cross-validation accuracy of 0.86, the model demonstrated consistent performance across folds, correctly classifying 86% of the customers on average.
 
-![Alt text](Images\Confusion_Matrix_DT.png)
+![Alt text](Images/Confusion_Matrix_DT.png)
 
 **Random Forest**
 
