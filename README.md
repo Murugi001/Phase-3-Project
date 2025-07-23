@@ -1,6 +1,8 @@
 ## Project Overview:
 ##  CUSTOMER CHURN PREDICTION FOR SYRIATEL 
 
+![Alt text](Images/churn_photo.jpg)
+
 ## 1.1 Business Understanding
 
 SyriaTel, like many telecom providers, operates in a highly competitive industry where retaining existing customers is often more cost-effective than acquiring new ones. Customer churn — when subscribers stop using the service — directly impacts revenue and long-term profitability.
