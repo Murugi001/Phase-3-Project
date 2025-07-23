@@ -9,7 +9,7 @@ SyriaTel, like many telecom providers, operates in a highly competitive industry
 The challenge is that churn doesn't usually happen randomly. It can result from dissatisfaction with service quality, pricing, customer support, or competitors' offers. If SyriaTel can predict which customers are likely to churn, it can act proactively to retain them through targeted interventions.
 
 ### 1.2 Business Goals
-![Alt text](Images/Business goals.jpg)
+![Alt text](Images/Business_goals.jpg)
 To reduce customer churn and increase customer lifetime value (CLTV) by identifying subscribers who are most likely to leave soon.
 
 Specifically:
@@ -57,13 +57,18 @@ Logistic model
 
 The Logistic Regression model achieved an accuracy of **0.72**, with a **precision of 0.30**, **recall of 0.71**, and **F1 score of 0.42**. The confusion matrix revealed 103 true positives, 42 false negatives, 239 false positives, and 616 true negatives. In terms of cross-validation, the model achieved an average accuracy of 75% across 5 folds, indicating a reasonably good ability to distinguish between churned and non-churned customers. The AUC score of 0.8015 suggests that the model has an 80.15% chance of correctly ranking a randomly chosen churned customer above a non-churned one, highlighting decent discriminative power despite its lower precision.
 
+
 **Decision trees**
 
 The Decision Tree model achieved an accuracy of 0.88, with precision of 0.56 and recall of 0.75. The confusion matrix showed 769 true negatives, 86 false positives, 36 false negatives, and 109 true positives. With a cross-validation accuracy of 0.86, the model demonstrated consistent performance across folds, correctly classifying 86% of the customers on average.
 
+![Alt text](Images\Confusion_Matrix_DT.png)
+
 **Random Forest**
 
 The Random Forest model outperformed the others with an accuracy of 0.90, precision of 0.64, and recall of 0.73. It recorded 795 true negatives, 60 false positives, 39 false negatives, and 106 true positives. The model maintained strong generalization ability, with a cross-validation accuracy of 0.87, correctly identifying 87% of customers across different data splits.
+
+![Alt text](Images/Confusion_Matrix_RF.png)
 
  ### 3.2 After hyperparameter tuning
 
@@ -80,6 +85,8 @@ Tuned Random Forest: AUC = 0.89 — Best overall performance.
 Tuned Decision Tree: AUC = 0.86 — Strong performer, just behind Random Forest.
 
 Logistic Regression: AUC = 0.80 — Lowest among the three, but still a reliable baseline.
+
+![Alt text](Images/Tuned_ROC_Curve.png)
 
 ## 3.3 Feature selection
 
